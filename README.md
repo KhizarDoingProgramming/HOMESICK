@@ -96,7 +96,7 @@ Navigate to [http://localhost:3000](http://localhost:3000) and watch it come to 
 
 ## 🤝 Getting Involved
 
-This project is maintained by the **HOMESICK** core team. If you're from the organization and looking to contribute:
+This project is maintained by the **HOMESICK** core team and was originally architected and developed by **Mustafa**. If you're from the organization and looking to contribute:
 1. Create a feature branch (`git checkout -b feature/your-feature`)
 2. Commit your changes (`git commit -m 'feat: added something cool'`)
 3. Push to the branch (`git push origin feature/your-feature`)
@@ -104,6 +104,15 @@ This project is maintained by the **HOMESICK** core team. If you're from the org
 
 ---
 
+## ©️ License & Ownership
+
+**Proprietary and Confidential.**  
+This codebase, its architecture, and all related design assets were exclusively created by **Mustafa** for **Homesick Studio**. All rights are reserved. 
+
+Unauthorized copying, modification, distribution, or use of this project (or any portion thereof) without explicit permission from Homesick Studio is strictly prohibited.
+
+---
+
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&pause=1000&color=888888&center=true&vCenter=true&width=400&lines=Stay+Creative.;Stay+Homesick." alt="Footer Typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=16&pause=1000&color=888888&center=true&vCenter=true&width=400&lines=Stay+Creative.;Stay+Homesick.;Built+by+Mustafa." alt="Footer Typing" />
 </div>
