@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-dark: #2c180f;
+  --color-dark-alt: #2b190f;
+  --color-cream: #F7F6F0;
+  --color-cream-light: #f5f3ee;
+  --color-cream-dark: #f6f5ee;
+  --color-text-dark: #2c180f;
+  --color-text-cream: #f5f3ee;
+  --color-text-muted: #63544b;
+  --color-text-secondary: rgba(0,0,0,0.33);
+  --color-accent: #fe3d06;
+  --color-accent-purple: #bfbef5;
+  --color-accent-purple-mid: #aaa5d6;
+  --color-border-cream: rgba(242,240,235,0.33);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #F7F6F0;
+  width: 100%;
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  flex-direction: column;
+  background: #F7F6F0;
+  color: #2c180f;
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+}
+
+main {
+  min-height: 100vh;
+  flex: 1;
+  background: #F7F6F0;
+  width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(254, 61, 6, 0.2);
+  color: #2c180f;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #63544b;
+  border-radius: 3px;
+}
+
+/* Grain overlay */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.15;
+  mix-blend-mode: multiply;
+  background-image: url('/images/texture/grain.webp');
+  background-size: 200px 200px;
+  background-repeat: repeat;
+}
+
+.grain-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+  opacity: 0.5;
+}
+
+/* Nav underline */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Hero drift */
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(6px, -10px) rotate(0.4deg); }
+  50% { transform: translate(-4px, 6px) rotate(-0.2deg); }
+  75% { transform: translate(10px, 4px) rotate(0.15deg); }
+}
+
+@keyframes drift-alt {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(-8px, 6px) rotate(-0.3deg); }
+  66% { transform: translate(5px, -8px) rotate(0.25deg); }
+}
+
+@keyframes drift-slow {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(4px, -6px) rotate(0.2deg); }
+}
+
+.animate-drift { animation: drift 12s ease-in-out infinite; }
+.animate-drift-alt { animation: drift-alt 15s ease-in-out infinite; }
+.animate-drift-slow { animation: drift-slow 18s ease-in-out infinite; }
+
+/* Scallop drift */
+@keyframes divider-drift {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-divider-drift {
+  animation: divider-drift 5s linear infinite;
+}
+
+/* Centered container - guaranteed centering */
+.container-center {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+@media (min-width: 1024px) {
+  .container-center {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Service line divider */
+.service-divider {
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, rgba(44,24,15,0.15) 50%, transparent 100%);
+}
+
+/* Dot scale animation */
+@keyframes dot-scale {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
