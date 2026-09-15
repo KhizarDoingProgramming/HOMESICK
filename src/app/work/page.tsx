@@ -58,7 +58,7 @@ export default function WorkPage() {
 
       
       <div className="w-full max-w-[1440px] mx-auto px-[28px] lg:px-8 pb-24 lg:pb-36">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-12">
           {projects.map((project, i) => (
             <motion.div
               key={project.id}
@@ -88,7 +88,7 @@ export default function WorkPage() {
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
                 </div>
 
-                <div className="flex items-start justify-between">
+                <div className="flex items-start justify-between mt-3">
                   <div>
                     <h3 className="text-xl lg:text-2xl font-medium text-text-dark group-hover:text-[#fe3d06] transition-colors">
                       {project.title}{" "}

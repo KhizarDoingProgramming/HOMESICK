@@ -115,7 +115,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="lg:hidden absolute inset-0 overflow-hidden opacity-30 pointer-events-none" aria-hidden="true">
+      <div className="lg:hidden absolute inset-0 overflow-hidden opacity-15 pointer-events-none" aria-hidden="true">
         {[collageItems[1], collageItems[4], collageItems[2]].map((item, i) => (
           <motion.div
             key={i}
@@ -153,12 +153,12 @@ export default function Hero() {
             Creative Technology Studio
           </motion.span>
 
-          <div className="overflow-hidden mb-4">
+          <div className="overflow-hidden mb-6">
             <motion.h1
               initial={{ y: "110%" }}
               animate={{ y: "0%" }}
               transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="text-[clamp(2.2rem,10vw,3.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-cream-light"
+              className="text-[clamp(2.2rem,10vw,3.5rem)] leading-[1.15] font-medium tracking-[-0.03em] text-cream-light"
             >
               We make the
             </motion.h1>
@@ -168,7 +168,7 @@ export default function Hero() {
               initial={{ y: "110%" }}
               animate={{ y: "0%" }}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="text-[clamp(2.2rem,10vw,3.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-cream-light"
+              className="text-[clamp(2.2rem,10vw,3.5rem)] leading-[1.15] font-medium tracking-[-0.03em] text-cream-light"
             >
               digital side{" "}
               <span className="font-serif italic text-[#fe3d06]">feel right.</span>
@@ -179,7 +179,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-col items-center gap-5 mt-10"
+            className="flex flex-col items-center gap-6 mt-12"
           >
             <a href="/contact" className="bg-cream-light text-dark font-medium flex items-center justify-center transition-transform hover:scale-105" style={{ height: '52px', padding: '0 36px', borderRadius: '9999px', fontSize: '15px' }}>
               Start a project
@@ -239,7 +239,7 @@ export default function Hero() {
       </div>
 
       
-      <div className="relative z-10 w-full border-t border-cream-light/10 py-4 overflow-hidden">
+      <div className="relative z-10 w-full border-t border-cream-light/10 py-6 overflow-hidden">
         <div className="flex animate-marquee whitespace-nowrap">
           {["Web Development", "AI Automation", "Digital Experiences", "Business Systems", "Product Design", "E-commerce", "SaaS Platforms", "API Integration", "Web Development", "AI Automation", "Digital Experiences", "Business Systems", "Product Design", "E-commerce", "SaaS Platforms", "API Integration"].map((word, i) => (
             <span key={i} className="inline-flex items-center mx-6 lg:mx-10">

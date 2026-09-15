@@ -122,8 +122,8 @@ export default function About() {
       </div>
 
       
-      <div className="lg:hidden px-[28px] py-24">
-        <div className="mb-8">
+      <div className="lg:hidden px-[28px] py-28">
+        <div className="mb-10">
           <svg viewBox="0 0 300 150" className="w-full h-32" fill="none">
             {dots.slice(0, 8).map((dot, i) => (
               <motion.circle
@@ -142,7 +142,7 @@ export default function About() {
         </div>
 
         
-        <div className="flex gap-4 mb-10 overflow-x-auto pb-4">
+        <div className="flex gap-5 mb-14 overflow-x-auto pb-4">
           {aboutPhotos.map((photo, i) => (
             <div
               key={i}
@@ -165,7 +165,7 @@ export default function About() {
           ))}
         </div>
 
-        <p className="text-[22px] leading-[1.35] text-text-dark font-normal">
+        <p className="text-[22px] leading-[1.5] text-text-dark font-normal mb-12">
           A multi-craft studio with one goal: being responsive to everyday{" "}
           <span className="font-serif font-bold italic">creative needs</span>. By merging{" "}
           <span className="font-serif font-bold italic">design</span>,{" "}
@@ -175,7 +175,7 @@ export default function About() {
           <span className="font-serif font-bold italic">problem solver</span>.
         </p>
 
-        <a href="#work" className="inline-flex items-center gap-2 mt-16 text-text-dark text-[14px] font-medium">
+        <a href="#work" className="inline-flex items-center gap-2 text-text-dark text-[15px] font-medium">
           See our work <span className="text-text-dark/40">→</span>
         </a>
       </div>
