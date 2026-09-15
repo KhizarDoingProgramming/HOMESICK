@@ -142,7 +142,7 @@ export default function Hero() {
       </div>
 
       
-      <div className="relative z-10 flex-1 flex items-center justify-center w-full px-[28px] lg:hidden">
+      <div className="relative z-10 flex-1 flex flex-col justify-center items-center w-full px-[28px] lg:hidden">
         <div className="text-center max-w-md mx-auto w-full">
           <motion.span
             initial={{ opacity: 0, y: 10 }}
@@ -174,12 +174,16 @@ export default function Hero() {
               <span className="font-serif italic text-[#fe3d06]">feel right.</span>
             </motion.h1>
           </div>
+        </div>
+      </div>
 
+      <div className="relative z-10 w-full px-[28px] pb-6 lg:hidden">
+        <div className="flex flex-col items-center gap-4">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-col items-center gap-6 mt-12"
+            className="flex flex-col items-center gap-5"
           >
             <a href="/contact" className="bg-cream-light text-dark font-medium flex items-center justify-center transition-transform hover:scale-105" style={{ height: '52px', padding: '0 36px', borderRadius: '9999px', fontSize: '15px' }}>
               Start a project
