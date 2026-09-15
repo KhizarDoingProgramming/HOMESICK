@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=50&pause=1000&color=FE3D06&center=true&vCenter=true&random=false&width=800&height=100&lines=HOMESICK+STUDIO;CREATIVE+TECHNOLOGY;WE+MOVE+DIFFERENTLY" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=50&pause=1000&color=FE3D06&center=true&vCenter=true&random=false&width=800&height=100&lines=HOMESICK;CREATIVE+TECHNOLOGY;WE+MOVE+DIFFERENTLY" alt="Typing SVG" />
 </div>
 
 <br/>
@@ -8,6 +8,9 @@
   <p><strong>A premium, high-performance creative agency portfolio built for the modern web.</strong></p>
   
   <p>
+    <a href="https://homesick.vercel.app">
+      <img src="https://img.shields.io/badge/Live_Demo-homesick.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+    </a>
     <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
@@ -22,9 +25,11 @@
 ## ⚡️ The Vision
 
 **HOMESICK** isn't just another template. It's a statement. 
-We built this project to showcase what happens when you combine ruthless performance optimization with unapologetic, Gen Z-driven design aesthetics. No boring grids. No stiff animations. Just buttery smooth interactions, dynamic noise overlays, and a typography system that commands attention.
+This project showcases what happens when you combine ruthless performance optimization with unapologetic, Gen Z-driven design aesthetics. No boring grids. No stiff animations. Just buttery smooth interactions, dynamic noise overlays, and a typography system that commands attention.
 
-Whether we are building digital experiences, insanely complex automation systems, or web products for businesses—we do it with style. No cap.
+Whether building digital experiences, automation systems, or web products for businesses — it's done with style. No cap.
+
+**Live Site:** [homesick.vercel.app](https://homesick.vercel.app)
 
 ---
 
@@ -44,7 +49,7 @@ Whether we are building digital experiences, insanely complex automation systems
 - **Grain & Texture:** A subtle, animated noise overlay that gives the entire application a raw, analog, premium feel.
 
 ### 🚀 Technical Excellence
-- **Next.js 14 App Router:** Blazing fast page transitions, Server Components by default, and unparalleled SEO.
+- **Next.js App Router:** Blazing fast page transitions, Server Components by default, and unparalleled SEO.
 - **Framer Motion Integration:** Every entrance, exit, and scroll is orchestrated. Elements don't just appear; they *arrive*.
 - **Zero-Jank Layouts:** Aggressively optimized CSS architecture bypassing standard utility limits for perfect, mathematical precision.
 - **Fully Responsive:** Meticulously crafted for mobile, tablet, and ultrawide displays.
@@ -94,9 +99,10 @@ Navigate to [http://localhost:3000](http://localhost:3000) and watch it come to 
 
 ---
 
-## 🤝 Getting Involved
+## 🤝 Contributing
 
-This project is maintained by the **HOMESICK** core team and was originally architected and developed by **Mustafa**. If you're from the organization and looking to contribute:
+Feel free to fork, clone, and use this project. Just give proper credit — don't claim you built it from scratch. A simple mention or link back goes a long way.
+
 1. Create a feature branch (`git checkout -b feature/your-feature`)
 2. Commit your changes (`git commit -m 'feat: added something cool'`)
 3. Push to the branch (`git push origin feature/your-feature`)
@@ -104,12 +110,11 @@ This project is maintained by the **HOMESICK** core team and was originally arch
 
 ---
 
-## ©️ License & Ownership
+## ©️ License & Usage
 
-**Proprietary and Confidential.**  
-This codebase, its architecture, and all related design assets were exclusively created by **Mustafa** for **Homesick Studio**. All rights are reserved. 
+You are free to clone, use, and modify this project for personal or commercial purposes. **However, you must give credit.** Do not claim this work as your own.
 
-Unauthorized copying, modification, distribution, or use of this project (or any portion thereof) without explicit permission from Homesick Studio is strictly prohibited.
+Built by **Mustafa**.
 
 ---
 
