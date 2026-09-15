@@ -98,11 +98,11 @@ function StepItem({ step, index }: { step: typeof steps[0]; index: number }) {
 
       
       <div className="lg:hidden pl-12">
-        <span className="text-black/30 text-[13px] tracking-wider font-bold uppercase block mb-2">{step.number}</span>
-        <h3 className="text-xl font-medium text-text-dark tracking-[-0.01em] mb-2">
+        <span className="text-black/30 text-[13px] tracking-wider font-bold uppercase block mb-3">{step.number}</span>
+        <h3 className="text-xl font-medium text-text-dark tracking-[-0.01em] mb-3">
           <span className="font-serif italic">{step.title}</span>
         </h3>
-        <p className="text-text-muted text-sm leading-relaxed">{step.description}</p>
+        <p className="text-text-muted text-[15px] leading-relaxed">{step.description}</p>
       </div>
     </motion.div>
   );

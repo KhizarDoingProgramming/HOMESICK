@@ -11,11 +11,11 @@ export default function Home() {
       <Hero />
       <TaglineStrip variant="dark" />
       <About />
-      <div className="h-16 lg:h-24 bg-cream" />
+      <div className="h-20 lg:h-24 bg-cream" />
       <TaglineStrip variant="dark" />
 
       <SelectedWork />
-      <div className="h-16 lg:h-24 bg-cream" />
+      <div className="h-20 lg:h-24 bg-cream" />
       <Process />
       <FinalCTA />
     </>

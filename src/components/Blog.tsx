@@ -98,13 +98,13 @@ export default function Blog() {
                 <div className="absolute inset-0 bg-[#fe3d06]/0 group-hover:bg-[#fe3d06]/10 transition-colors duration-500" />
               </div>
 
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-4 mb-4">
                 <span className="text-[10px] uppercase tracking-[0.15em] text-black/40">{post.category}</span>
                 <div className="w-1 h-1 rounded-full bg-black/15" />
                 <span className="text-[10px] uppercase tracking-[0.15em] text-black/40">{post.date}</span>
               </div>
 
-              <h3 className="text-lg lg:text-xl font-medium text-text-dark leading-snug mb-2 group-hover:text-[#fe3d06] transition-colors duration-300">
+              <h3 className="text-lg lg:text-xl font-medium text-text-dark leading-snug mb-3 group-hover:text-[#fe3d06] transition-colors duration-300">
                 {post.title.split(post.titleItalic).map((part, j) => (
                   <span key={j}>
                     {part}

@@ -142,7 +142,7 @@ export default function About() {
         </div>
 
         
-        <div className="flex gap-3 mb-8 overflow-x-auto pb-4">
+        <div className="flex gap-4 mb-10 overflow-x-auto pb-4">
           {aboutPhotos.map((photo, i) => (
             <div
               key={i}

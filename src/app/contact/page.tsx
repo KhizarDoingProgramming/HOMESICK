@@ -68,48 +68,48 @@ export default function ContactPage() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div>
-                <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '8px' }}>First name</label>
+                <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '12px' }}>First name</label>
                 <input
                   type="text"
                   className="w-full border border-black/10 rounded-xl text-text-dark bg-white/50 focus:bg-white focus:outline-none focus:border-[#fe3d06] focus:ring-1 focus:ring-[#fe3d06] transition-all placeholder:text-text-muted/40"
                   placeholder="First name"
-                  style={{ padding: '14px 16px' }}
+                  style={{ padding: '16px 18px' }}
                 />
               </div>
               <div>
-                <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '8px' }}>Last name</label>
+                <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '12px' }}>Last name</label>
                 <input
                   type="text"
                   className="w-full border border-black/10 rounded-xl text-text-dark bg-white/50 focus:bg-white focus:outline-none focus:border-[#fe3d06] focus:ring-1 focus:ring-[#fe3d06] transition-all placeholder:text-text-muted/40"
                   placeholder="Last name"
-                  style={{ padding: '14px 16px' }}
+                  style={{ padding: '16px 18px' }}
                 />
               </div>
             </div>
 
             <div>
-              <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '8px' }}>Email</label>
+              <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '12px' }}>Email</label>
               <input
-                type="email"
-                className="w-full border border-black/10 rounded-xl text-text-dark bg-white/50 focus:bg-white focus:outline-none focus:border-[#fe3d06] focus:ring-1 focus:ring-[#fe3d06] transition-all placeholder:text-text-muted/40"
-                placeholder="your@email.com"
-                style={{ padding: '14px 16px' }}
-              />
+                  type="email"
+                  className="w-full border border-black/10 rounded-xl text-text-dark bg-white/50 focus:bg-white focus:outline-none focus:border-[#fe3d06] focus:ring-1 focus:ring-[#fe3d06] transition-all placeholder:text-text-muted/40"
+                  placeholder="your@email.com"
+                  style={{ padding: '16px 18px' }}
+                />
             </div>
 
             <div>
-              <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '8px' }}>Tell us about your project</label>
+              <label className="text-[12px] font-medium uppercase tracking-wider text-text-muted block" style={{ marginBottom: '12px' }}>Tell us about your project</label>
               <textarea
                 rows={4}
                 className="w-full border border-black/10 rounded-xl text-text-dark bg-white/50 focus:bg-white focus:outline-none focus:border-[#fe3d06] focus:ring-1 focus:ring-[#fe3d06] transition-all placeholder:text-text-muted/40 resize-none"
                 placeholder="What are you building?"
-                style={{ padding: '14px 16px' }}
-              />
+                style={{ padding: '16px 18px' }}
+                />
             </div>
 
             <button
               type="submit"
-              className="mt-4 inline-flex items-center justify-center gap-3 bg-dark text-cream-light rounded-full text-[15px] font-medium tracking-wide hover:bg-[#fe3d06] hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#fe3d06]/20 transition-all duration-300 group"
+              className="mt-6 inline-flex items-center justify-center gap-3 bg-dark text-cream-light rounded-full text-[15px] font-medium tracking-wide hover:bg-[#fe3d06] hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#fe3d06]/20 transition-all duration-300 group"
               style={{ height: '56px', padding: '0 32px' }}
             >
               Send message

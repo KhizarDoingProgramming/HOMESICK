@@ -144,7 +144,7 @@ export default function Work() {
       </div>
 
       
-      <div className="lg:hidden px-[28px] pb-24 space-y-4">
+      <div className="lg:hidden px-[28px] pb-24 space-y-6">
         {projects.map((project, i) => (
           <div key={project.id} className="relative aspect-[16/10] rounded-xl overflow-hidden border border-black/10">
             <ProjectVisual project={project} index={i} />

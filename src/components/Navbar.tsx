@@ -36,9 +36,9 @@ export default function Navbar() {
             className="fixed inset-0 z-[110] bg-dark flex items-start"
           >
             
-            <button
+              <button
               onClick={() => setMobileOpen(false)}
-              className="absolute top-6 right-[28px] lg:hidden text-cream-light p-1"
+              className="absolute top-6 right-[28px] lg:hidden text-cream-light p-2"
               aria-label="Close menu"
             >
               <X size={26} />
@@ -115,7 +115,7 @@ export default function Navbar() {
           {!mobileOpen && (
             <button
               onClick={() => setMobileOpen(true)}
-              className="lg:hidden text-white p-1 pointer-events-auto"
+              className="lg:hidden text-white p-2 pointer-events-auto"
               aria-label="Open menu"
             >
               <Menu size={26} />

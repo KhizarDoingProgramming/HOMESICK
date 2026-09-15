@@ -71,7 +71,7 @@ export default function SelectedWork() {
               className="shrink-0 w-[280px] lg:w-[340px]"
             >
               <Link href="/work" className="group block">
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden mb-4" style={{ backgroundColor: project.color }}>
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden mb-5" style={{ backgroundColor: project.color }}>
                   {!imgErrors[project.id] ? (
                     <img
                       src={project.image}

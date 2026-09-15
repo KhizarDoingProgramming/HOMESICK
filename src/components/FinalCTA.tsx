@@ -72,14 +72,14 @@ export default function FinalCTA() {
           className="flex flex-col lg:flex-row items-start lg:items-center gap-6"
         >
           <div className="flex-1">
-            <h3 className="text-cream-light text-lg lg:text-xl font-medium mb-1">
+            <h3 className="text-cream-light text-lg lg:text-xl font-medium mb-2">
               Get the best of HOMESICK delivered to your inbox.
             </h3>
-            <p className="text-cream-light/40 text-sm">Insights on design, development and automation.</p>
+            <p className="text-cream-light/40 text-[15px]">Insights on design, development and automation.</p>
           </div>
           <div 
             className="relative flex items-center w-full lg:w-[460px] bg-white/5 border border-cream-light/10 rounded-full transition-all focus-within:bg-white/10 focus-within:border-cream-light/20"
-            style={{ height: '64px', padding: '6px' }}
+            style={{ height: '64px', padding: '8px' }}
           >
             <input
               type="email"

@@ -18,7 +18,7 @@ export default function Footer() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <footer ref={ref} className="relative bg-[#251811] overflow-hidden pt-12 pb-10 min-h-[90vh] flex flex-col justify-between">
+    <footer ref={ref} className="relative bg-[#251811] overflow-hidden pt-16 pb-12 min-h-[90vh] flex flex-col justify-between">
       
       
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden opacity-[0.03] select-none z-0">
@@ -29,7 +29,7 @@ export default function Footer() {
 
       
       <div className="w-full px-[28px] lg:px-8 z-20">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between border-b border-white/10 pb-4 mb-4 gap-4">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between border-b border-white/10 pb-6 mb-6 gap-4">
           <div className="text-[#a48873] uppercase tracking-widest text-[11px] lg:text-[13px] flex items-center gap-4">
             <span>HOMESICK</span>
             <span className="font-serif italic text-[#c3a48e] text-[15px] lg:text-[17px]">/ stories. systems.internet</span>
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       
-      <div className="relative w-full flex-grow flex items-center justify-center my-10 min-h-[350px] md:min-h-[500px] lg:min-h-[600px] z-10 overflow-hidden">
+      <div className="relative w-full flex-grow flex items-center justify-center my-12 min-h-[350px] md:min-h-[500px] lg:min-h-[600px] z-10 overflow-hidden">
         <div className="relative w-full max-w-[1400px] h-[300px] md:h-[400px] lg:h-[550px]">
           {scatteredPhotos.map((photo, i) => (
             <motion.div
