@@ -6,37 +6,37 @@ import { useState } from "react";
 const collageItems = [
   {
     src: "/images/hero/1.jpg",
-    width: 440, height: 540, x: "1%", y: "3%", delay: 0, rotation: -8,
+    width: 440, height: 540, x: "2%", y: "10%", delay: 0, rotation: -8,
     gradient: "from-[#c4956a] to-[#a87d55]",
     label: "Branding",
   },
   {
     src: "/images/hero/2.jpg",
-    width: 400, height: 420, x: "30%", y: "8%", delay: 0.1, rotation: 4,
+    width: 400, height: 420, x: "30%", y: "6%", delay: 0.1, rotation: 4,
     gradient: "from-[#fe3d06] to-[#cc3205]",
     label: "Design",
   },
   {
     src: "/images/hero/3.jpg",
-    width: 360, height: 400, x: "56%", y: "5%", delay: 0.15, rotation: -3,
+    width: 360, height: 400, x: "56%", y: "8%", delay: 0.15, rotation: -3,
     gradient: "from-[#bfbef5] to-[#9992cc]",
     label: "Digital",
   },
   {
     src: "/images/hero/4.jpg",
-    width: 380, height: 500, x: "66%", y: "32%", delay: 0.25, rotation: 7,
+    width: 380, height: 500, x: "62%", y: "40%", delay: 0.25, rotation: 7,
     gradient: "from-[#2c180f] to-[#1a0e08]",
     label: "Development",
   },
   {
     src: "/images/hero/5.jpg",
-    width: 420, height: 520, x: "10%", y: "38%", delay: 0.35, rotation: -6,
+    width: 420, height: 520, x: "8%", y: "46%", delay: 0.35, rotation: -6,
     gradient: "from-[#3a3a3c] to-[#2a2a2c]",
     label: "Automation",
   },
   {
     src: "/images/hero/6.jpg",
-    width: 320, height: 440, x: "42%", y: "40%", delay: 0.4, rotation: 3,
+    width: 320, height: 440, x: "40%", y: "44%", delay: 0.4, rotation: 3,
     gradient: "from-[#e8dcc8] to-[#c4b8a0]",
     label: "Strategy",
   },
@@ -88,7 +88,7 @@ export default function Hero() {
       </motion.div>
 
       
-      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div className="hidden lg:block absolute inset-0 overflow-hidden" aria-hidden="true">
         {collageItems.map((item, i) => (
           <motion.div
             key={i}
@@ -108,6 +108,32 @@ export default function Hero() {
           >
             {!imgErrors[i] ? (
               <CollageImage item={item} onError={() => setImgErrors(prev => ({ ...prev, [i]: true }))} />
+            ) : (
+              <CollageFallback item={item} />
+            )}
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="lg:hidden absolute inset-0 overflow-hidden opacity-20 pointer-events-none" aria-hidden="true">
+        {[collageItems[1], collageItems[4], collageItems[2]].map((item, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.3 + i * 0.15 }}
+            className="absolute"
+            style={{
+              left: `${5 + i * 32}%`,
+              top: `${15 + i * 18}%`,
+              width: "clamp(120px, 28vw, 260px)",
+              height: "clamp(160px, 36vw, 340px)",
+              transform: `rotate(${item.rotation * 0.4}deg)`,
+              filter: "drop-shadow(-8px 20px 40px rgba(0, 0, 0, 0.5))",
+            }}
+          >
+            {!imgErrors[i + 10] ? (
+              <CollageImage item={item} onError={() => setImgErrors(prev => ({ ...prev, [i + 10]: true }))} />
             ) : (
               <CollageFallback item={item} />
             )}

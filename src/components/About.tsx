@@ -165,7 +165,7 @@ export default function About() {
           ))}
         </div>
 
-        <p className="text-[26px] leading-[1.35] text-text-dark font-normal">
+        <p className="text-[22px] leading-[1.35] text-text-dark font-normal">
           A multi-craft studio with one goal: being responsive to everyday{" "}
           <span className="font-serif font-bold italic">creative needs</span>. By merging{" "}
           <span className="font-serif font-bold italic">design</span>,{" "}

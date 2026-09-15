@@ -44,8 +44,8 @@ export default function Footer() {
       </div>
 
       
-      <div className="relative w-full flex-grow flex items-center justify-center my-10 min-h-[500px] lg:min-h-[600px] z-10">
-        <div className="relative w-full max-w-[1400px] h-[400px] lg:h-[550px]">
+      <div className="relative w-full flex-grow flex items-center justify-center my-10 min-h-[350px] md:min-h-[500px] lg:min-h-[600px] z-10 overflow-hidden">
+        <div className="relative w-full max-w-[1400px] h-[300px] md:h-[400px] lg:h-[550px]">
           {scatteredPhotos.map((photo, i) => (
             <motion.div
               key={i}
@@ -65,7 +65,7 @@ export default function Footer() {
                 y: { duration: 0.3 },
                 rotate: { duration: 0.3 }
               }}
-              className="absolute top-0 w-[240px] lg:w-[360px] xl:w-[420px] rounded-xl overflow-hidden shadow-2xl cursor-pointer"
+              className="absolute top-0 w-[140px] md:w-[240px] lg:w-[360px] xl:w-[420px] rounded-xl overflow-hidden shadow-2xl cursor-pointer"
               style={{
                 left: photo.left,
                 aspectRatio: "3/4",
