@@ -115,7 +115,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="lg:hidden absolute inset-0 overflow-hidden opacity-20 pointer-events-none" aria-hidden="true">
+      <div className="lg:hidden absolute inset-0 overflow-hidden opacity-30 pointer-events-none" aria-hidden="true">
         {[collageItems[1], collageItems[4], collageItems[2]].map((item, i) => (
           <motion.div
             key={i}
@@ -139,53 +139,6 @@ export default function Hero() {
             )}
           </motion.div>
         ))}
-      </div>
-
-      
-      <div className="relative z-10 mt-auto pb-6 px-[28px] lg:px-8">
-        <div className="flex items-end justify-between max-w-7xl mx-auto">
-          
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="hidden lg:block"
-          >
-            <div className="font-serif italic text-cream-light/40 text-[clamp(1.5rem,3vw,2.5rem)] leading-tight">
-              creative
-            </div>
-            <div className="font-serif italic text-cream-light/60 text-[clamp(2rem,4.5vw,4rem)] leading-none ml-4">
-              studio
-            </div>
-          </motion.div>
-
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="text-center flex-1 lg:mx-0"
-          >
-            <div className="text-cream-light/30 text-[12px] lg:text-[13px] uppercase tracking-[0.2em]">
-              Design &middot; Development &middot; Automation
-            </div>
-          </motion.div>
-
-          
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 1.1 }}
-            className="hidden lg:block text-right"
-          >
-            <div className="text-cream-light/40 text-[clamp(1rem,2vw,1.5rem)]">
-              <span className="font-serif italic">and</span>
-            </div>
-            <div className="font-serif italic text-cream-light/60 text-[clamp(1.8rem,4vw,3.5rem)]">
-              technology.
-            </div>
-          </motion.div>
-        </div>
       </div>
 
       
@@ -234,6 +187,53 @@ export default function Hero() {
             <a href="#work" className="text-cream-light/40 hover:text-cream-light transition-colors" style={{ fontSize: '13px', padding: '12px' }}>
               Explore our work
             </a>
+          </motion.div>
+        </div>
+      </div>
+
+      
+      <div className="relative z-10 mt-auto pb-6 px-[28px] lg:px-8">
+        <div className="flex items-end justify-between max-w-7xl mx-auto">
+          
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="hidden lg:block"
+          >
+            <div className="font-serif italic text-cream-light/40 text-[clamp(1.5rem,3vw,2.5rem)] leading-tight">
+              creative
+            </div>
+            <div className="font-serif italic text-cream-light/60 text-[clamp(2rem,4.5vw,4rem)] leading-none ml-4">
+              studio
+            </div>
+          </motion.div>
+
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="text-center flex-1 lg:mx-0"
+          >
+            <div className="text-cream-light/30 text-[12px] lg:text-[13px] uppercase tracking-[0.2em]">
+              Design &middot; Development &middot; Automation
+            </div>
+          </motion.div>
+
+          
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+            className="hidden lg:block text-right"
+          >
+            <div className="text-cream-light/40 text-[clamp(1rem,2vw,1.5rem)]">
+              <span className="font-serif italic">and</span>
+            </div>
+            <div className="font-serif italic text-cream-light/60 text-[clamp(1.8rem,4vw,3.5rem)]">
+              technology.
+            </div>
           </motion.div>
         </div>
       </div>
