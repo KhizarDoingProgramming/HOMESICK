@@ -47,13 +47,13 @@ export default function ContactPage() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="space-y-6"
             >
-              <a href="mailto:outlet767@gmail.com" className="flex items-center gap-4 text-text-dark hover:text-[#fe3d06] transition-colors group">
+              <a href="mailto:gmkhizar9@gmail.com" className="flex items-center gap-4 text-text-dark hover:text-[#fe3d06] transition-colors group">
                 <Mail size={20} className="text-text-muted group-hover:text-[#fe3d06] transition-colors" />
-                <span className="text-lg">outlet767@gmail.com</span>
+                <span className="text-lg">gmkhizar9@gmail.com</span>
               </a>
-              <a href="tel:+923197736844" className="flex items-center gap-4 text-text-dark hover:text-[#fe3d06] transition-colors group">
+              <a href="tel:+923209609931" className="flex items-center gap-4 text-text-dark hover:text-[#fe3d06] transition-colors group">
                 <Phone size={20} className="text-text-muted group-hover:text-[#fe3d06] transition-colors" />
-                <span className="text-lg">+92 319 7736844</span>
+                <span className="text-lg">+92 320 9609931</span>
               </a>
             </motion.div>
           </div>

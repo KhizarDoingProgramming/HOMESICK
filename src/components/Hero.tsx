@@ -148,17 +148,17 @@ export default function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-cream-light/50 text-[11px] tracking-[0.25em] uppercase block mb-6"
+            className="text-cream-light/50 text-[11px] tracking-[0.25em] uppercase block mb-10"
           >
             Creative Technology Studio
           </motion.span>
 
-          <div className="overflow-hidden mb-2">
+          <div className="overflow-hidden mb-4">
             <motion.h1
               initial={{ y: "110%" }}
               animate={{ y: "0%" }}
               transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="text-[clamp(2rem,10vw,3.5rem)] leading-[0.92] font-medium tracking-[-0.03em] text-cream-light"
+              className="text-[clamp(2.2rem,10vw,3.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-cream-light"
             >
               We make the
             </motion.h1>
@@ -168,7 +168,7 @@ export default function Hero() {
               initial={{ y: "110%" }}
               animate={{ y: "0%" }}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="text-[clamp(2rem,10vw,3.5rem)] leading-[0.92] font-medium tracking-[-0.03em] text-cream-light"
+              className="text-[clamp(2.2rem,10vw,3.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-cream-light"
             >
               digital side{" "}
               <span className="font-serif italic text-[#fe3d06]">feel right.</span>
@@ -179,12 +179,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-col items-center gap-3 mt-8"
+            className="flex flex-col items-center gap-5 mt-10"
           >
-            <a href="/contact" className="bg-cream-light text-dark font-medium flex items-center justify-center transition-transform hover:scale-105" style={{ height: '48px', padding: '0 32px', borderRadius: '9999px', fontSize: '14px' }}>
+            <a href="/contact" className="bg-cream-light text-dark font-medium flex items-center justify-center transition-transform hover:scale-105" style={{ height: '52px', padding: '0 36px', borderRadius: '9999px', fontSize: '15px' }}>
               Start a project
             </a>
-            <a href="#work" className="text-cream-light/40 hover:text-cream-light transition-colors" style={{ fontSize: '13px', padding: '12px' }}>
+            <a href="#work" className="text-cream-light/40 hover:text-cream-light transition-colors" style={{ fontSize: '14px', padding: '14px' }}>
               Explore our work
             </a>
           </motion.div>
@@ -192,7 +192,7 @@ export default function Hero() {
       </div>
 
       
-      <div className="relative z-10 mt-auto pb-6 px-[28px] lg:px-8">
+      <div className="relative z-10 mt-auto pb-8 pt-4 px-[28px] lg:px-8">
         <div className="flex items-end justify-between max-w-7xl mx-auto">
           
           <motion.div
