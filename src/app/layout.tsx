@@ -21,6 +21,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "HOMESICK — Creative Technology Studio",
   description: "We build digital experiences, automation systems and web products for businesses that want to move differently.",
+  icons: {
+    icon: "/icon.jpeg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
